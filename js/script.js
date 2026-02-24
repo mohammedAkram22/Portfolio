@@ -75,7 +75,10 @@ form.onsubmit = (e) => {
 
 // to-up-btn
 const topBtn = document.querySelector("#top-btn");
-window.onload = () => topBtn.classList.toggle("show", scrollY > 100)
+window.onload = () => {
+    topBtn.classList.toggle("show", scrollY > 100)
+    AOS.init();
+}
 window.onscroll = () => topBtn.classList.toggle("show", scrollY > 100)
 topBtn.onclick = () => { scrollTo({ top: 0, behavior: "smooth" }) };
 
