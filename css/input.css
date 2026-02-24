@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+
+@layer utilities {
+    @keyframes floaty {
+
+        0%,
+        100% {
+            transform: translateY(0px) rotate(0deg);
+        }
+
+        50% {
+            transform: translateY(-6) rotate(6deg);
+        }
+
+        75% {
+            transform: translateY(10px) rotate(6deg);
+        }
+    }
+
+    .animate-[floaty_6s_ease-in-out_infinite] {
+        animation: floaty 6s ease-in-out infinite;
+    }
+}
