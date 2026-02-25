@@ -76,6 +76,20 @@ form.onsubmit = (e) => {
 // to-up-btn
 const topBtn = document.querySelector("#top-btn");
 window.onload = () => {
+    const mood = localStorage.getItem("mood")
+    if (mood) {
+        if (localStorage.getItem("mood") == "dark") {
+            moodBtn.querySelector("i").classList.replace("fa-moon", "fa-sun")
+            document.documentElement.classList.add("dark")
+        } else {
+            moodBtn.querySelector("i").classList.replace("fa-sun", "fa-moon")
+            document.documentElement.classList.remove("dark")
+        }
+    } else {
+        localStorage.setItem("mood", "light")
+        moodBtn.querySelector("i").classList.replace("fa-sun", "fa-moon")
+        document.documentElement.classList.remove("dark")
+    }
     topBtn.classList.toggle("show", scrollY > 100)
     AOS.init();
 }
@@ -92,4 +106,24 @@ linkes.forEach(el => {
         document.querySelector(".burger i").classList.replace("fa-close", "fa-bars")
     }
 });
+// mood btn
+const moodBtn = document.querySelector("#mood-btn")
 
+moodBtn.onclick = () => {
+    const mood = localStorage.getItem("mood")
+    if (mood) {
+        if (localStorage.getItem("mood") == "dark") {
+            document.documentElement.classList.remove("dark")
+            localStorage.setItem("mood", "light");
+            moodBtn.querySelector("i").classList.replace("fa-sun", "fa-moon")
+        } else {
+            localStorage.setItem("mood", "dark");
+            moodBtn.querySelector("i").classList.replace("fa-moon", "fa-sun")
+            document.documentElement.classList.add("dark")
+        }
+    } else {
+        localStorage.setItem("mood", "dark");
+        moodBtn.querySelector("i").classList.replace("fa-moon", "fa-sun")
+        document.documentElement.classList.add("dark")
+    }
+}

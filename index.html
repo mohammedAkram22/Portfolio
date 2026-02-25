@@ -18,7 +18,7 @@
 <body class="m-0 overflow-x-hidden text-[#0f172a] bg-[#f7f9fc]">
     <!-- Header -->
     <header
-        class="header fixed top-0 right-0 left-0 z-50 bg-[#f7f9fcc7] backdrop-blur-[10px] border-b border-b-[#e2e8f0] px-3">
+        class="header fixed top-0 right-0 left-0 z-50 bg-[#f7f9fcc7] backdrop-blur-[10px] border-b border-b-[#e2e8f0] dark:border-b-[#4a4949] px-3 dark:bg-[#2D2D2D] duration-300 min-h-18.75">
         <div class="header__inner flex items-center justify-between lg:max-w-[80%] sm:max-w-[90%] mx-auto">
             <a class="logo font-extrabold flex items-end justify-center" href="#home">
                 <div class="hero__visual reveal flex items-center justify-center pt-2">
@@ -30,30 +30,31 @@
                     blur-[0px]
                     rounded-[40%_60%_60%_40%_/40%_40%_60%_60%]
                     animate-[floaty_6s_ease-in-out_infinite]
-                    border border-[rgba(226,232,240,0.9)]" aria-hidden="true"></div>
+                    border border-[rgba(226,232,240,0.9)]
+                    dark:border-[rgba(34,197,94,0.18)]" aria-hidden="true"></div>
                     <div class="flex items-center justify-center transform hover:scale-[1.1] duration-400 max-w-15 sm:max-w-20"
                         title="logo">
                         <img src="images/logo.png" alt="logo" title="logo" class="w-full h-auto">
                     </div>
                 </div>
             </a>
-            <nav class="nav flex max-[900px]:hidden max-[640px]:mt-2.5 gap-4.5 max-[900px]:flex-col [&.show]:flex [&.show]:absolute [&.show]:top-16 [&.show]:right-6 [&.show]:bg-white [&.show]:border [&.show]:border-[#E2E8F0] [&.show]:rounded-[14px] [&.show]:p-5 [&.show]:shadow-[0_10px_30px_rgba(0,0,0,0.10)]"
+            <nav class="nav flex max-[900px]:hidden max-[900px]:mt-2.5 gap-4.5 max-[900px]:flex-col [&.show]:flex [&.show]:absolute [&.show]:top-16 [&.show]:right-6 [&.show]:bg-white dark:[&.show]:bg-[#2D2D2D] [&.show]:rounded-[14px] [&.show]:p-5 [&.show]:shadow-[0_10px_30px_rgba(0,0,0,0.10)]"
                 id="nav">
-                <ul class="nav-list flex gap-4 max-[640px]:flex-col min-[900px]:gap-10 m-0 p-0 list-none">
+                <ul class="nav-list flex gap-4 max-[900px]:flex-col min-[900px]:gap-10 m-0 p-0 list-none">
                     <li class="nav-item"><a href="#home"
-                            class="relative max-[900px]:px-5 [@media_(min-width:640px)_and_(max-width:850px)]:px-1.5 teat-[#475569] font-semibold duration-200 py-0 [&.active]:text-[#2563eb] before:absolute before:content-[''] before:bg-[#2563eb] before:w-0 before:h-0.5 before:-bottom-1.25 before:duration-500 hover:before:text-[#2563eb] hover:before:w-full hover:text-[#2563eb] active w-full">Home</a>
+                            class="relative max-[900px]:px-5 teat-[#475569] font-semibold duration-200 py-0 [&.active]:text-[#2563eb] before:absolute before:content-[''] before:bg-[#2563eb] before:w-0 before:h-0.5 before:-bottom-1.25 before:duration-500 hover:before:text-[#2563eb] hover:before:w-full hover:text-[#2563eb] active w-full dark:text-white">Home</a>
                     </li>
                     <li class="nav-item"><a href="#about"
-                            class="relative max-[900px]:px-5 [@media_(min-width:640px)_and_(max-width:850px)]:px-1.5 teat-[#475569] font-semibold duration-200 py-0 [&.active]:text-[#2563eb] before:absolute before:content-[''] before:bg-[#2563eb] before:w-0 before:h-0.5 before:-bottom-1.25 before:duration-500 hover:before:text-[#2563eb] hover:before:w-full hover:text-[#2563eb]">About</a>
+                            class="relative max-[900px]:px-5 teat-[#475569] font-semibold duration-200 py-0 [&.active]:text-[#2563eb] before:absolute before:content-[''] before:bg-[#2563eb] before:w-0 before:h-0.5 before:-bottom-1.25 before:duration-500 hover:before:text-[#2563eb] hover:before:w-full hover:text-[#2563eb] dark:text-white">About</a>
                     </li>
                     <li class="nav-item"><a href="#skills"
-                            class="relative max-[900px]:px-5 [@media_(min-width:640px)_and_(max-width:850px)]:px-1.5 teat-[#475569] font-semibold duration-200 py-0 [&.active]:text-[#2563eb] before:absolute before:content-[''] before:bg-[#2563eb] before:w-0 before:h-0.5 before:-bottom-1.25 before:duration-500 hover:before:text-[#2563eb] hover:before:w-full hover:text-[#2563eb]">Skills</a>
+                            class="relative max-[900px]:px-5 teat-[#475569] font-semibold duration-200 py-0 [&.active]:text-[#2563eb] before:absolute before:content-[''] before:bg-[#2563eb] before:w-0 before:h-0.5 before:-bottom-1.25 before:duration-500 hover:before:text-[#2563eb] hover:before:w-full hover:text-[#2563eb] dark:text-white">Skills</a>
                     </li>
                     <li class="nav-item"><a href="#projects"
-                            class="relative max-[900px]:px-5 [@media_(min-width:640px)_and_(max-width:850px)]:px-1.5 teat-[#475569] font-semibold duration-200 py-0 [&.active]:text-[#2563eb] before:absolute before:content-[''] before:bg-[#2563eb] before:w-0 before:h-0.5 before:-bottom-1.25 before:duration-500 hover:before:text-[#2563eb] hover:before:w-full hover:text-[#2563eb]">Projects</a>
+                            class="relative max-[900px]:px-5 teat-[#475569] font-semibold duration-200 py-0 [&.active]:text-[#2563eb] before:absolute before:content-[''] before:bg-[#2563eb] before:w-0 before:h-0.5 before:-bottom-1.25 before:duration-500 hover:before:text-[#2563eb] hover:before:w-full hover:text-[#2563eb] dark:text-white">Projects</a>
                     </li>
                     <li class="nav-item"><a href="#contact"
-                            class="relative max-[900px]:px-5 [@media_(min-width:640px)_and_(max-width:850px)]:px-1.5 teat-[#475569] font-semibold duration-200 py-0 [&.active]:text-[#2563eb] before:absolute before:content-[''] before:bg-[#2563eb] before:w-0 before:h-0.5 before:-bottom-1.25 before:duration-500 hover:before:text-[#2563eb] hover:before:w-full hover:text-[#2563eb]">Contact</a>
+                            class="relative max-[900px]:px-5 teat-[#475569] font-semibold duration-200 py-0 [&.active]:text-[#2563eb] before:absolute before:content-[''] before:bg-[#2563eb] before:w-0 before:h-0.5 before:-bottom-1.25 before:duration-500 hover:before:text-[#2563eb] hover:before:w-full hover:text-[#2563eb] dark:text-white">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -69,6 +70,10 @@
                     id="burger" aria-label="Open menu">
                     <i class="fas fa-bars"></i>
                 </button>
+                <button
+                    class="cursor-pointer max-[768px]:ms-5 text-[#0f172a] dark:text-white hover:text-sky-600 duration-150"
+                    id="mood-btn">
+                    <i class="fa-regular fa-moon text-[18px]"></i></button>
             </div>
         </div>
     </header>
@@ -77,20 +82,20 @@
     <main id="home">
         <!-- Hero -->
         <section
-            class="py-12.5 md:px-0 px-4 min-h-screen section hero max-[640px]:py-27.5 pt-30 lg:max-w-[80%] sm:max-w-[90%] mx-auto"
+            class="py-12.5 md:px-0 px-4 min-h-screen section hero max-[640px]:py-27.5 pt-30 duration-300 dark:bg-[#121212]"
             id="home">
             <div
-                class="hero__grid [@media_(min-width:471px)_and_(max-width:1100px)]:gap-30 max-[470px]:gap-7 grid max-[980px]:grid-cols-1 grid-cols-2 gap-7 items-center justify-between">
+                class="hero__grid [@media_(min-width:471px)_and_(max-width:1100px)]:gap-30 max-[470px]:gap-7 grid max-[980px]:grid-cols-1 grid-cols-2 gap-7 items-center justify-between lg:max-w-[80%] sm:max-w-[90%] mx-auto">
                 <div class="hero__content max-[640px]:pb-13.75 reveal">
                     <p
                         class="badge max-[470px]:mb-4.25 inline-flex bg-[rgba(34,197,94,0.12)] text-[#166534] border border-[rgba(34,197,94,0.25)] py-1.5 px-2.5 rounded-full font-bold m-0 mb-2.5">
                         Front-End Developer</p>
                     <h1
-                        class="hero__title [@media_(min-width:471px)_and_(max-width:1100px)]:text-[34px] [@media_(min-width:471px)_and_(max-width:1100px)]:my-5 [@media_(min-width:471px)_and_(max-width:1100px)]:mx-0 max-[980px]:text-[42px] text-[48px] leading-[1.05] m-0 mb-3 tracking-[-1px] max-[470px]:text-[30px]">
+                        class="hero__title [@media_(min-width:471px)_and_(max-width:1100px)]:text-[34px] [@media_(min-width:471px)_and_(max-width:1100px)]:my-5 [@media_(min-width:471px)_and_(max-width:1100px)]:mx-0 max-[980px]:text-[42px] text-[48px] leading-[1.05] m-0 mb-3 tracking-[-1px] max-[470px]:text-[30px] dark:text-white">
                         Hi, I’m <span class="text-primary text-[#2563eb]">Mohammed</span>.
                         <span class="block text-[28px] my-2">I program clean and modern web pages.</span>
                     </h1>
-                    <p class="hero__subtitle m-0 mb-4.5 text-[#475569] max-w-[56ch]">
+                    <p class="hero__subtitle m-0 mb-4.5 text-[#475569] max-w-[56ch] dark:text-white">
                         I program responsive web pages using <span class="text-sky-600 font-semibold">HTML5</span>,
                         <span class="text-sky-600 font-semibold">CSS3</span>, <span
                             class="text-sky-600 font-semibold">JavaScript</span> and <span
@@ -106,17 +111,20 @@
                             href="#contact">Contact Me</a>
                     </div>
                     <div class="hero__stats max-[640px]:grid-cols-1 grid grid-cols-3 gap-3">
-                        <div class="stat bg-white border border-[#e2e8f0] rounded-[14px] p-3.5">
-                            <div class="stat__num font-extrabold text-[20px]">4+</div>
-                            <div class="stat__label text-[#475569] text-[13px] mt-0.5">Core Skills</div>
+                        <div class="stat bg-white rounded-[14px] p-3.5 dark:bg-[#2D2D2D]">
+                            <div class="stat__num dark:text-white font-extrabold text-[20px]">4+</div>
+                            <div class="stat__label text-[#475569] dark:text-gray-400 text-[13px] mt-0.5">Core Skills
+                            </div>
                         </div>
-                        <div class="stat bg-white border border-[#e2e8f0] rounded-[14px] p-3.5">
-                            <div class="stat__num font-extrabold text-[20px]">10+</div>
-                            <div class="stat__label text-[#475569] text-[13px] mt-0.5">Web Projects</div>
+                        <div class="stat bg-white rounded-[14px] p-3.5 dark:bg-[#2D2D2D]">
+                            <div class="stat__num dark:text-white font-extrabold text-[20px]">10+</div>
+                            <div class="stat__label text-[#475569] dark:text-gray-400 text-[13px] mt-0.5">Web Projects
+                            </div>
                         </div>
-                        <div class="stat bg-white border border-[#e2e8f0] rounded-[14px] p-3.5">
-                            <div class="stat__num font-extrabold text-[20px]">100%</div>
-                            <div class="stat__label text-[#475569] text-[13px] mt-0.5">Responsive</div>
+                        <div class="stat bg-white rounded-[14px] p-3.5 dark:bg-[#2D2D2D]">
+                            <div class="stat__num dark:text-white font-extrabold text-[20px]">100%</div>
+                            <div class="stat__label text-[#475569] dark:text-gray-400 text-[13px] mt-0.5">Responsive
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -129,7 +137,7 @@
                     border border-[rgba(226,232,240,0.9)]" aria-hidden="true"></div>
 
                     <!-- Avatar -->
-                    <div class="avatar overflow-hidden relative max-w-40 h-40 rounded-full bg-white border border-[#e2e8f0] shadow-[0_20px_50px_rgba(15,23,42,0.12)] w-full"
+                    <div class="avatar overflow-hidden relative max-w-40 h-40 rounded-full bg-white border border-[#e2e8f0] dark:border-[#2D2D2D] shadow-[0_20px_50px_rgba(15,23,42,0.12)] w-full"
                         title="Avatar">
                         <img src="images/avatar.jpg" alt="avatar"
                             class="w-full max-h-full object-cover rounded-full transform hover:scale-[1.5] hover:translate-y-10 duration-700">
@@ -140,24 +148,26 @@
 
         <!-- About -->
         <section
-            class="md:py-12.5 py-6 px-4 section lg:max-w-[80%] sm:max-w-[90%] mx-auto [@media_(min-width:471px)_and_(max-width:1100px)]:py-8.75 [@media_(min-width:471px)_and_(max-width:1100px)]:px-0"
+            class="md:py-12.5 py-6 px-4 section [@media_(min-width:471px)_and_(max-width:1100px)]:py-8.75 [@media_(min-width:471px)_and_(max-width:1100px)]:px-0 dark:bg-[#121212] duration-300"
             id="about" data-aos="fade-zoom-in">
-            <div class="container">
+            <div class="container lg:max-w-[80%] sm:max-w-[90%] mx-auto">
                 <div class="section__head mb-6 reveal text-center">
-                    <h2 class="section__title text-[32px] m-0 ms-2">About</h2>
-                    <p class="section__desc m-0 text-[#475569]">
+                    <h2 class="section__title text-[32px] m-0 ms-2 dark:text-white">About</h2>
+                    <p class="section__desc m-0 text-[#475569] dark:text-gray-400">
                         A quick story about how I build interfaces.
                     </p>
                 </div>
 
                 <div
-                    class="card bg-white border border-[#e2e8f0] rounded-2xl p-5.5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal">
+                    class="card bg-white rounded-2xl p-5.5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal dark:bg-[#2D2D2D] ">
                     <div class="story ">
-                        <p class="m-0 mb-2.5 text-[18px]">I started with <strong class="text-sky-600">HTML</strong>.</p>
-                        <p class="m-0 mb-2.5 text-[18px]">I fell in love with <strong class="text-sky-600">CSS</strong>.
+                        <p class="m-0 mb-2.5 text-[18px] dark:text-white">I started with <strong
+                                class="text-sky-600">HTML</strong> .</p>
+                        <p class="m-0 mb-2.5 text-[18px] dark:text-white">I fell in love with <strong
+                                class="text-sky-600">CSS</strong> .
                         </p>
-                        <p class="m-0 text-[18px]">
-                            Now I bring pages to life using <strong class="text-sky-600">JavaScript</strong>.
+                        <p class="m-0 text-[18px] dark:text-white">
+                            Now I bring pages to life using <strong class="text-sky-600">JavaScript</strong> .
                         </p>
                     </div>
 
@@ -166,24 +176,27 @@
                             <span
                                 class="dot w-3 h-3 rounded-full bg-[#2563eb] mt-1.5 shadow-[0_10px_20px_rgba(37,99,235,0.25)]"></span>
                             <div>
-                                <h4 class="m-0 mb-1 font-bold">Clean UI</h4>
-                                <p class="m-0 text-[#475569]">Readable layouts, spacing, and modern components.</p>
+                                <h4 class="m-0 mb-1 font-bold dark:text-white">Clean UI</h4>
+                                <p class="m-0 text-[#475569] dark:text-gray-400">Readable layouts, spacing, and modern
+                                    components.</p>
                             </div>
                         </div>
                         <div class="timeline__item grid grid-cols-[18px_1fr] gap-3 items-start">
                             <span
                                 class="dot w-3 h-3 rounded-full bg-[#2563eb] mt-1.5 shadow-[0_10px_20px_rgba(37,99,235,0.25)]"></span>
                             <div>
-                                <h4 class="m-0 mb-1 font-bold">Responsive by default</h4>
-                                <p class="m-0 text-[#475569]">Mobile-first layout using Flexbox & Grid.</p>
+                                <h4 class="m-0 mb-1 font-bold dark:text-white">Responsive by default</h4>
+                                <p class="m-0 text-[#475569] dark:text-gray-400">Mobile-first layout using Flexbox &
+                                    Grid.</p>
                             </div>
                         </div>
                         <div class="timeline__item grid grid-cols-[18px_1fr] gap-3 items-start">
                             <span
                                 class="dot w-3 h-3 rounded-full bg-[#2563eb] mt-1.5 shadow-[0_10px_20px_rgba(37,99,235,0.25)]"></span>
                             <div>
-                                <h4 class="m-0 mb-1 font-bold">Smooth UX</h4>
-                                <p class="m-0 text-[#475569]">Micro-animations + performance-friendly effects.</p>
+                                <h4 class="m-0 mb-1 font-bold dark:text-white">Smooth UX</h4>
+                                <p class="m-0 text-[#475569] dark:text-gray-400">Micro-animations + performance-friendly
+                                    effects.</p>
                             </div>
                         </div>
                     </div>
@@ -193,23 +206,24 @@
 
         <!-- Skills -->
         <section
-            class="md:py-12.5 py-6 md:px-0 px-4 section lg:max-w-[80%] sm:max-w-[90%] mx-auto [@media_(min-width:471px)_and_(max-width:1100px)]:py-8.75 [@media_(min-width:471px)_and_(max-width:1100px)]:px-0"
+            class="md:py-12.5 py-6 md:px-0 px-4 section [@media_(min-width:471px)_and_(max-width:1100px)]:py-8.75 [@media_(min-width:471px)_and_(max-width:1100px)]:px-0 dark:bg-[#121212] duration-300"
             id="skills">
-            <div class="mx-auto">
+            <div class="lg:max-w-[80%] sm:max-w-[90%] mx-auto">
                 <div class="section__head mb-6 reveal">
-                    <h2 class="section__title text-[32px] m-0 ms-2 text-center">Skills</h2>
+                    <h2 class="section__title text-[32px] m-0 ms-2 text-center dark:text-white">Skills</h2>
                 </div>
 
                 <div
                     class="grid max-[490px]:grid-cols-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center justify-center gap-4 px-3 sm:px-0">
-                    <div class="skill duration-200 hover:-translate-y-1.5 card bg-white border border-[#e2e8f0] rounded-2xl p-5.5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal"
+                    <div class="skill dark:bg-[#2D2D2D] duration-200 hover:-translate-y-1.5 rounded-2xl p-5.5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal"
                         data-level="95" data-aos="fade-right">
                         <div class="skill__top flex items-center justify-between gap-2.5 mb-3">
-                            <h3 class="font-bold">HTML5</h3>
+                            <h3 class="font-bold dark:text-white">HTML5</h3>
                             <span
                                 class="pill text-[12px] px-1.5 py-2.5 rounded-[999px] border border-[#e2e8f0] bg-[#f8fafc] text-[#475569] font-bold ">Advanced</span>
                         </div>
-                        <p class="muted text-[#475569] xl:text-[17px] md:text-[13.5px]">Semantic structure & clean
+                        <p class="muted text-[#475569] xl:text-[17px] md:text-[13.5px] dark:text-gray-400">Semantic
+                            structure & clean
                             markup.</p>
                         <div
                             class="bar mt-3 h-2.5 bg-[#eef2ff] rounded-[999px] overflow-hidden border border-[rgba(37,99,235,0.12)]">
@@ -217,14 +231,15 @@
                                 class="block h-full w-0 bg-[linear-gradient(90deg,rgba(37,99,235,1),rgba(34,197,94,1))] rounded-[999px] duration-500"></span>
                         </div>
                     </div>
-                    <div class="skill duration-200 hover:-translate-y-1.5 card bg-white border border-[#e2e8f0] rounded-2xl p-5.5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal"
+                    <div class="skill dark:bg-[#2D2D2D] duration-200 hover:-translate-y-1.5 rounded-2xl p-5.5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal"
                         data-level="88" data-aos="fade-left">
                         <div class="skill__top flex items-center justify-between gap-2.5 mb-3">
-                            <h3 class="font-bold">CSS3</h3>
+                            <h3 class="font-bold dark:text-white">CSS3</h3>
                             <span
                                 class="pill text-[12px] px-1.5 py-2.5 rounded-[999px] border border-[#e2e8f0] bg-[#f8fafc] text-[#475569] font-bold ">Advanced</span>
                         </div>
-                        <p class="muted text-[#475569] xl:text-[17px] md:text-[13.5px]">Flexbox, Grid, animations, UI
+                        <p class="muted text-[#475569] xl:text-[17px] md:text-[13.5px] dark:text-gray-400">Flexbox,
+                            Grid, animations, UI
                             polish.</p>
                         <div
                             class="bar mt-3 h-2.5 bg-[#eef2ff] rounded-[999px] overflow-hidden border border-[rgba(37,99,235,0.12)]">
@@ -232,14 +247,15 @@
                                 class="block h-full w-0 bg-[linear-gradient(90deg,rgba(37,99,235,1),rgba(34,197,94,1))] rounded-[999px] duration-500"></span>
                         </div>
                     </div>
-                    <div class="skill duration-200 hover:-translate-y-1.5 card bg-white border border-[#e2e8f0] rounded-2xl p-5.5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal"
+                    <div class="skill dark:bg-[#2D2D2D] duration-200 hover:-translate-y-1.5 rounded-2xl p-5.5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal"
                         data-level="80" data-aos="fade-right">
                         <div class="skill__top flex items-center justify-between gap-2.5 mb-3">
-                            <h3 class="font-bold">JavaScript</h3>
+                            <h3 class="font-bold dark:text-white">JavaScript</h3>
                             <span
                                 class="pill text-[12px] px-1.5 py-2.5 rounded-[999px] border border-[#e2e8f0] bg-[#f8fafc] text-[#475569] font-bold">Intermediate</span>
                         </div>
-                        <p class="muted text-[#475569] xl:text-[17px] md:text-[13.5px]">DOM, events, localStorage, APIs,
+                        <p class="muted text-[#475569] xl:text-[17px] md:text-[13.5px] dark:text-gray-400">DOM, events,
+                            localStorage, APIs,
                             logic.</p>
                         <div
                             class="bar mt-3 h-2.5 bg-[#eef2ff] rounded-[999px] overflow-hidden border border-[rgba(37,99,235,0.12)]">
@@ -247,14 +263,15 @@
                                 class="block h-full w-0 bg-[linear-gradient(90deg,rgba(37,99,235,1),rgba(34,197,94,1))] rounded-[999px] duration-500"></span>
                         </div>
                     </div>
-                    <div class="skill duration-200 hover:-translate-y-1.5 card bg-white border border-[#e2e8f0] rounded-2xl p-5.5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal"
+                    <div class="skill dark:bg-[#2D2D2D] duration-200 hover:-translate-y-1.5 rounded-2xl p-5.5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal"
                         data-level="88" data-aos="fade-left">
                         <div class="skill__top flex items-center justify-between gap-2.5 mb-3">
-                            <h3 class="font-bold">tailwindcss</h3>
+                            <h3 class="font-bold dark:text-white">tailwindcss</h3>
                             <span
                                 class="pill text-[12px] px-1.5 py-2.5 rounded-[999px] border border-[#e2e8f0] bg-[#f8fafc] text-[#475569] font-bold ">Advanced</span>
                         </div>
-                        <p class="muted text-[#475569] xl:text-[17px] md:text-[13.5px]">Utility-first styling & fast UI
+                        <p class="muted text-[#475569] xl:text-[17px] md:text-[13.5px] dark:text-gray-400">Utility-first
+                            styling & fast UI
                             building.</p>
                         <div
                             class="bar mt-3 h-2.5 bg-[#eef2ff] rounded-[999px] overflow-hidden border border-[rgba(37,99,235,0.12)]">
@@ -268,41 +285,44 @@
 
         <!-- Projects -->
         <section
-            class="md:py-12.5 md:px-0 px-4 section lg:max-w-[80%] sm:max-w-[90%] mx-auto [@media_(min-width:471px)_and_(max-width:1100px)]:py-8.75 [@media_(min-width:471px)_and_(max-width:1100px)]:px-0"
+            class="md:py-12.5 md:px-0 px-4 section [@media_(min-width:471px)_and_(max-width:1100px)]:py-8.75 [@media_(min-width:471px)_and_(max-width:1100px)]:px-0 dark:bg-[#121212] duration-300"
             id="projects">
-            <div class="container">
+            <div class="container lg:max-w-[80%] sm:max-w-[90%] mx-auto">
                 <div class="section__head mb-6 reveal">
-                    <h2 class="section__title text-[32px] m-0 ms-2 text-center">Projects</h2>
+                    <h2 class="section__title text-[32px] m-0 ms-2 text-center dark:text-white">Projects</h2>
                 </div>
 
                 <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-5 px-5 sm:px-0">
                     <article
-                        class="project hover:-translate-y-1.5 overflow-hidden p-0 duration-200 card bg-white border border-[#e2e8f0] rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal from-right"
+                        class="project dark:bg-[#2D2D2D] hover:-translate-y-1.5 overflow-hidden p-0 duration-200 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal from-right"
                         data-aos="fade-right">
                         <div
-                            class="project__img h-40 bg-[linear-gradient(120deg,rgba(37,99,235,0.22),rgba(34,197,94,0.18))] border-b border-b-[#e2e8f0]">
+                            class="project__img h-40 bg-[linear-gradient(120deg,rgba(37,99,235,0.22),rgba(34,197,94,0.18))]">
                         </div>
                         <div class="project__body px-4.5 pt-4.5 pb-5">
-                            <h3 class="m-0 mb-1.5 font-bold">chrismax</h3>
-                            <p class="muted text-[#475569]">
+                            <h3 class="m-0 mb-1.5 font-bold dark:text-white sm:text-[20px]">
+                                <a href="https://chrismaxx.netlify.app/" class="hover:text-[#2563eb] duration-300 "
+                                    target="_blank">chrismax</a>
+                            </h3>
+                            <p class="muted text-[#475569] dark:text-gray-400">
                                 Modern Front-End Web Interface
                             </p>
                             <div class="tags flex gap-2 flex-wrap px-0 mt-3 mb-3.5 ">
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">HTML</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">HTML</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">CSS</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">CSS</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">JS</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">JS</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">bootstrap</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">bootstrap</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">UI</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">UI</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">Local
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">Local
                                     storge</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">Responsive</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">Responsive</span>
                             </div>
                             <div class="project__actions flex gap-2.5 flex-wrap">
                                 <a class="btn inline-flex items-center justify-center gap-2 cursor-pointer font-bold duration-200  btn--ghost hover:-translate-y-0.5 bg-white border border-[#e2e8f0] text-[#0f172a] btn--sm py-2 px-3 text-[14px] rounded-[10px]"
@@ -314,32 +334,34 @@
                     </article>
 
                     <article
-                        class="project hover:-translate-y-1.5 overflow-hidden p-0 duration-200 card bg-white border border-[#e2e8f0] rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal from-down"
+                        class="project dark:bg-[#2D2D2D] hover:-translate-y-1.5 overflow-hidden p-0 duration-200 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal from-down"
                         data-aos="fade-left">
                         <div
-                            class="project__img  h-40 border-b border-b-[#e2e8f0] bg-[linear-gradient(120deg,rgba(34,197,94,0.22),rgba(37,99,235,0.16))]">
+                            class="project__img  h-40 bg-[linear-gradient(120deg,rgba(34,197,94,0.22),rgba(37,99,235,0.16))]">
                         </div>
                         <div class="project__body px-4.5 pt-4.5 pb-5">
-                            <h3 class="m-0 mb-1.5 font-bold">Salads</h3>
-                            <p class="muted text-[#475569]">
+                            <h3 class="m-0 mb-1.5 font-bold dark:text-white sm:text-[20px]"><a
+                                    href="https://salads2.netlify.app/" class="hover:text-[#2563eb] duration-300 "
+                                    target="_blank">Salads</a></h3>
+                            <p class="muted text-[#475569] dark:text-gray-400">
                                 Modern Front-End Web Interface
                             </p>
                             <div class="tags flex gap-2 flex-wrap px-0 mt-3 mb-3.5 ">
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">HTML</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">HTML</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">CSS</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">CSS</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">JS</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">JS</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">tailwindcss</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">tailwindcss</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">UI</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">UI</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">Local
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">Local
                                     storge</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">Responsive</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">Responsive</span>
                             </div>
                             <div class="project__actions flex gap-2.5 flex-wrap">
                                 <a class="btn inline-flex items-center justify-center gap-2cursor-pointer font-bold duration-200  btn--ghost hover:-translate-y-0.5 bg-white border border-[#e2e8f0] text-[#0f172a] btn--sm py-2 px-3 text-[14px] rounded-[10px]"
@@ -351,32 +373,34 @@
                     </article>
 
                     <article
-                        class="project hover:-translate-y-1.5 overflow-hidden p-0 duration-200 card bg-white border border-[#e2e8f0] rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal from-left"
+                        class="project dark:bg-[#2D2D2D] hover:-translate-y-1.5 overflow-hidden p-0 duration-200 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal from-left"
                         data-aos="fade-up">
                         <div
-                            class="project__img h-40 border-b border-b-[#e2e8f0]  bg-[linear-gradient(120deg,rgba(99,102,241,0.22),rgba(34,197,94,0.14))]">
+                            class="project__img h-40 bg-[linear-gradient(120deg,rgba(99,102,241,0.22),rgba(34,197,94,0.14))]">
                         </div>
                         <div class="project__body px-4.5 pt-4.5 pb-5">
-                            <h3 class="m-0 mb-1.5 font-bold">Ramadan</h3>
-                            <p class="muted text-[#475569]">
+                            <h3 class="m-0 mb-1.5 font-bold dark:text-white sm:text-[20px]"><a
+                                    href="https://ramadan2.netlify.app/" class="hover:text-[#2563eb] duration-300"
+                                    target="_blank">Ramadan</a></h3>
+                            <p class="muted text-[#475569] dark:text-gray-400">
                                 Modern Front-End Web Interface
                             </p>
                             <div class="tags flex gap-2 flex-wrap px-0 mt-3 mb-3.5 ">
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">HTML</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">HTML</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">CSS</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">CSS</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">JS</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">JS</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">tailwindcss</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">tailwindcss</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">APIs</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">APIs</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">Local
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">Local
                                     storge</span>
                                 <span
-                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold">Responsive</span>
+                                    class="tag text-[12px] py-1.5 px-2.5 rounded-[999px] bg-[#f1f5f9] border border-[#e2e8f0] text-[#475569] font-bold dark:bg-gray-300 dark:text-black">Responsive</span>
                             </div>
                             <div class="project__actions flex gap-2.5 flex-wrap">
                                 <a class="btn inline-flex items-center justify-center gap-2cursor-pointer font-bold duration-200  btn--ghost hover:-translate-y-0.5 bg-white border border-[#e2e8f0] text-[#0f172a] btn--sm py-2 px-3 text-[14px] rounded-[10px]"
@@ -391,27 +415,27 @@
         </section>
 
         <!-- Contact -->
-        <section class="py-12.5 max-[500px]:pb-0 md:px-0 px-4 section lg:max-w-[80%] sm:max-w-[90%] mx-auto"
-            id="contact" data-aos="fade-zoom-in">
-            <div class="container">
-                <div class="section__head mb-6 reveal">
-                    <h2 class="section__title text-[32px] m-0 ms-2">Contact</h2>
-                    <p class="section__desc m-0 text-[#475569]">
+        <section class="py-12.5 max-[500px]:pb-0 md:px-0 px-4 section duration-300 dark:bg-[#121212]" id="contact"
+            data-aos="fade-zoom-in">
+            <div class="container lg:max-w-[80%] sm:max-w-[90%] mx-auto">
+                <div class="section__head mb-6 reveal text-center">
+                    <h2 class="section__title text-[32px] m-0 ms-2 dark:text-white">Contact</h2>
+                    <p class="section__desc m-0 text-[#475569] dark:text-gray-400">
                         Let’s build something together.
                     </p>
                 </div>
                 <div
-                    class="card bg-white border border-[#e2e8f0] rounded-2xl p-5.5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] contact grid grid-cols-[0.9fr_1.1fr] gap-4.5 max-[980px]:grid-cols-1 reveal">
+                    class="card rounded-2xl p-5.5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] contact grid grid-cols-[0.9fr_1.1fr] gap-4.5 max-[980px]:grid-cols-1 reveal dark:bg-[#2D2D2D]">
                     <div class="contact__info">
-                        <h3>Send a message</h3>
-                        <p class="muted text-[#475569]">
+                        <h3 class="text-[30px] dark:text-white">Send a message</h3>
+                        <p class="muted text-[#475569] dark:text-gray-400">
                             You can connect via email or use the form.
                         </p>
                         <a class="link inline-flex mt-2.5 text-[#2563eb] font-extrabold relative pointer-events-auto hover:underline"
                             href="mailto:mohmedd.akram@gmail.com">
                             mohmedd.akram@gmail.com
                         </a>
-                        <p class="muted text-[#475569]">
+                        <p class="muted text-[#475569] dark:text-gray-400 my-2">
                             OR <span style="color: green; font-weight: bold;">whatsapp</span>
                         </p>
                         <a class="link inline-flex mt-2.5 text-[#2563eb] font-extrabold relative pointer-events-auto hover:underline"
@@ -420,20 +444,20 @@
                         </a>
                     </div>
                     <form class="contact__form">
-                        <label class="inline-block font-bold text-[#0f172a] mb-3 w-full">
+                        <label class="inline-block font-bold text-[#0f172a] mb-3 w-full dark:text-white">
                             Name
                             <input type="text" placeholder="Your name"
-                                class="w-full mt-2 p-3 rounded-xl border border-[#e2e8f0] bg-white outline-0 font-[inherit] focus:border-[rgba(37,99,235,0.55)]" />
+                                class="w-full mt-2 p-3 rounded-xl border border-[#e2e8f0] bg-white outline-0 dark:bg-[#2D2D2D] font-[inherit] focus:border-[rgba(37,99,235,0.55)]" />
                         </label>
-                        <label class="inline-block font-bold text-[#0f172a] mb-3 w-full">
+                        <label class="inline-block font-bold text-[#0f172a] mb-3 w-full dark:text-white">
                             Email <span class="text-red-500">*</span>
                             <input type="email" placeholder="you@email.com"
-                                class="w-full mt-2 p-3 rounded-xl border border-[#e2e8f0] bg-white outline-0 font-[inherit] focus:border-[rgba(37,99,235,0.55)] req" />
+                                class="w-full mt-2 p-3 rounded-xl border border-[#e2e8f0] bg-white outline-0 dark:bg-[#2D2D2D] font-[inherit] focus:border-[rgba(37,99,235,0.55)] req" />
                         </label>
-                        <label class="inline-block font-bold text-[#0f172a] mb-3 w-full">
+                        <label class="inline-block font-bold text-[#0f172a] mb-3 w-full dark:text-white">
                             Message <span class="text-red-500">*</span>
                             <textarea placeholder="Write your message..."
-                                class="min-h-30 mt-2 w-full resize-y focus:border-sky-600 outline-0 border border-[#e2e8f0] p-3 rounded-xl req"></textarea>
+                                class="min-h-30 mt-2 w-full resize-y focus:border-sky-600 outline-0 bg-white dark:bg-[#2D2D2D] border border-[#e2e8f0] p-3 rounded-xl req"></textarea>
                         </label>
                         <button
                             class="btn inline-flex items-center justify-center gap-2 py-2.5 px-3.5 rounded-xl border border-transparent cursor-pointer font-bold duration-200  btn--primary bg-[#2563eb] text-white shadow-[0_10px_20px_rgba(37,99,235,0.18)] hover:-translate-y-0.5"
@@ -452,8 +476,8 @@
             </button>
         </div>
     </main>
-    <footer class="footer my-5.5 text-center p-0 py-5">
-        <p class="muted text-[#475569]">© <span id="year"></span> Mohammed. All rights reserved.</p>
+    <footer class="footer text-center p-0 py-10 dark:bg-[#121212]">
+        <p class="muted text-[#475569] dark:text-white">© <span id="year"></span> Mohammed. All rights reserved.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
