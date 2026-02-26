@@ -1,18 +1,6 @@
 // Year
 document.querySelector("#year").textContent = new Date().getFullYear();
 
-// Reveal on scroll
-// const revealEls = document.querySelectorAll(".reveal");
-// const io = new IntersectionObserver(
-//     (entries) => {
-//         entries.forEach((e) => {
-//             e.isIntersecting ? e.target.classList.add("is-visible") : e.target.classList.remove("is-visible");
-//         });
-//     },
-//     { threshold: 0.12 }
-// );
-// revealEls.forEach((el) => io.observe(el));
-
 // Skill bars fill when visible
 const skills = document.querySelectorAll(".skill");
 const ioSkills = new IntersectionObserver(
