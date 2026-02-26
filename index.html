@@ -18,7 +18,7 @@
 <body class="m-0 overflow-x-hidden text-[#0f172a] bg-[#f7f9fc]">
     <!-- Header -->
     <header
-        class="header fixed top-0 right-0 left-0 z-50 bg-[#f7f9fcc7] backdrop-blur-[10px] border-b border-b-[#e2e8f0] dark:border-b-[#4a4949] px-3 dark:bg-[#2D2D2D] duration-300 min-h-18.75">
+        class="header fixed top-0 right-0 left-0 z-50 bg-[#f7f9fcc7] backdrop-blur-[10px] border-b border-b-[#e2e8f0] dark:border-b-[#4a4949] dark:bg-[#2D2D2D] duration-300 min-h-18.75">
         <div class="header__inner flex items-center justify-between lg:max-w-[80%] sm:max-w-[90%] mx-auto">
             <a class="logo font-extrabold flex items-end justify-center" href="#home">
                 <div class="hero__visual reveal flex items-center justify-center pt-2">
@@ -76,10 +76,14 @@
                     <i class="fa-regular fa-moon text-[18px]"></i></button>
             </div>
         </div>
+        <div class="h-1 w-full">
+            <div class="bg-[linear-gradient(-45deg,#6bb8ff,#0aa0ff,#3f8bff,#0077cc)] w-full h-1 progress"
+                style="width: 0;"></div>
+        </div>
     </header>
 
     <!-- Main -->
-    <main id="home">
+    <main id="home" class="dark:bg-[#121212]">
         <!-- Hero -->
         <section
             class="py-12.5 md:px-0 px-4 min-h-screen section hero max-[640px]:py-27.5 pt-30 duration-300 dark:bg-[#121212]"
@@ -90,8 +94,8 @@
                     <p
                         class="badge max-[470px]:mb-4.25 inline-flex bg-[rgba(34,197,94,0.12)] text-[#166534] border border-[rgba(34,197,94,0.25)] py-1.5 px-2.5 rounded-full font-bold m-0 mb-2.5">
                         Front-End Developer</p>
-                    <h1
-                        class="hero__title [@media_(min-width:471px)_and_(max-width:1100px)]:text-[34px] [@media_(min-width:471px)_and_(max-width:1100px)]:my-5 [@media_(min-width:471px)_and_(max-width:1100px)]:mx-0 max-[980px]:text-[42px] text-[48px] leading-[1.05] m-0 mb-3 tracking-[-1px] max-[470px]:text-[30px] dark:text-white">
+                    <h1 class="hero__title [@media_(min-width:471px)_and_(max-width:1100px)]:text-[34px] [@media_(min-width:471px)_and_(max-width:1100px)]:my-5 [@media_(min-width:471px)_and_(max-width:1100px)]:mx-0 max-[980px]:text-[42px] text-[48px] leading-[1.05] m-0 mb-3 tracking-[-1px] max-[470px]:text-[30px] dark:text-white"
+                        id="typing">
                         Hi, I’m <span class="text-primary text-[#2563eb]">Mohammed</span>.
                         <span class="block text-[28px] my-2">I program clean and modern web pages.</span>
                     </h1>
@@ -161,12 +165,12 @@
                 <div
                     class="card bg-white rounded-2xl p-5.5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal dark:bg-[#2D2D2D] ">
                     <div class="story ">
-                        <p class="m-0 mb-2.5 text-[18px] dark:text-white">I started with <strong
+                        <p class="m-0 mb-2.5 text-[17px] dark:text-white">I started with <strong
                                 class="text-sky-600">HTML</strong> .</p>
-                        <p class="m-0 mb-2.5 text-[18px] dark:text-white">I fell in love with <strong
+                        <p class="m-0 mb-2.5 text-[17px] dark:text-white">I fell in love with <strong
                                 class="text-sky-600">CSS</strong> .
                         </p>
-                        <p class="m-0 text-[18px] dark:text-white">
+                        <p class="m-0 text-[17px] dark:text-white">
                             Now I bring pages to life using <strong class="text-sky-600">JavaScript</strong> .
                         </p>
                     </div>
@@ -273,6 +277,21 @@
                         <p class="muted text-[#475569] xl:text-[17px] md:text-[13.5px] dark:text-gray-400">Utility-first
                             styling & fast UI
                             building.</p>
+                        <div
+                            class="bar mt-3 h-2.5 bg-[#eef2ff] rounded-[999px] overflow-hidden border border-[rgba(37,99,235,0.12)]">
+                            <span
+                                class="block h-full w-0 bg-[linear-gradient(90deg,rgba(37,99,235,1),rgba(34,197,94,1))] rounded-[999px] duration-500"></span>
+                        </div>
+                    </div>
+                    <div class="skill dark:bg-[#2D2D2D] duration-200 hover:-translate-y-1.5 rounded-2xl p-5.5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] reveal"
+                        data-level="88" data-aos="fade-left">
+                        <div class="skill__top flex items-center justify-between gap-2.5 mb-3">
+                            <h3 class="font-bold dark:text-white">bootstrap5</h3>
+                            <span
+                                class="pill text-[12px] px-1.5 py-2.5 rounded-[999px] border border-[#e2e8f0] bg-[#f8fafc] text-[#475569] font-bold ">Advanced</span>
+                        </div>
+                        <p class="muted text-[#475569] xl:text-[17px] md:text-[13.5px] dark:text-gray-400">Ready-made
+                            components for clean, responsive web design.</p>
                         <div
                             class="bar mt-3 h-2.5 bg-[#eef2ff] rounded-[999px] overflow-hidden border border-[rgba(37,99,235,0.12)]">
                             <span

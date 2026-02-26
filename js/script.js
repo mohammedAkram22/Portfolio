@@ -93,7 +93,15 @@ window.onload = () => {
     topBtn.classList.toggle("show", scrollY > 100)
     AOS.init();
 }
-window.onscroll = () => topBtn.classList.toggle("show", scrollY > 100)
+window.onscroll = () => {
+    topBtn.classList.toggle("show", scrollY > 100)
+
+    // progress
+    const progress = document.querySelector(".progress");
+    const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
+    progress.style.width = `${(scrollTop / (scrollHeight - clientHeight)) * 100}%`;
+}
+
 topBtn.onclick = () => { scrollTo({ top: 0, behavior: "smooth" }) };
 
 // navbar active linke
