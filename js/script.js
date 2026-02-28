@@ -59,6 +59,7 @@ form.onsubmit = (e) => {
         title: 'Form Submitted!',
         text: 'All required fields are filled.'
     });
+    inputs.forEach(input => input.value = "");
 }
 
 // to-up-btn
@@ -90,7 +91,7 @@ window.onload = () => {
         p.textContent += text[i++];
         if (!text[i]) clearInterval(timer);
     }, 100);
-    
+
     // AOS
     AOS.init();
 }
