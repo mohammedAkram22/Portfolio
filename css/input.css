@@ -22,3 +22,15 @@
         animation: floaty 6s ease-in-out infinite;
     }
 }
+
+/* typing */
+.typing::after {
+    content: '|';
+    animation: puls 1s ease infinite;
+}
+
+@keyframes puls {
+    50% {
+        opacity: 0;
+    }
+}

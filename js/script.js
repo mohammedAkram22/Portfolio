@@ -79,6 +79,19 @@ window.onload = () => {
         document.documentElement.classList.remove("dark")
     }
     topBtn.classList.toggle("show", scrollY > 100)
+
+    // Typing Effect
+    const p = document.querySelector(".typing");
+    const text = p.innerText;
+    p.textContent = "";
+    let i = 0;
+
+    let timer = setInterval(() => {
+        p.textContent += text[i++];
+        if (!text[i]) clearInterval(timer);
+    }, 100);
+    
+    // AOS
     AOS.init();
 }
 window.onscroll = () => {
