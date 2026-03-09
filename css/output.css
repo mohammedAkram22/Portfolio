@@ -8,11 +8,21 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-green-500: oklch(72.3% 0.219 149.579);
+    --color-green-600: oklch(62.7% 0.194 149.214);
+    --color-green-700: oklch(52.7% 0.154 150.069);
+    --color-green-800: oklch(44.8% 0.119 151.328);
     --color-sky-500: oklch(68.5% 0.169 237.323);
     --color-sky-600: oklch(58.8% 0.158 241.966);
+    --color-sky-700: oklch(50% 0.134 242.749);
+    --color-sky-800: oklch(44.3% 0.11 240.79);
+    --color-sky-900: oklch(39.1% 0.09 240.876);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-black: #000;
     --color-white: #fff;
@@ -335,6 +345,12 @@
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
@@ -377,8 +393,20 @@
   .w-0 {
     width: calc(var(--spacing) * 0);
   }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
   .w-3 {
     width: calc(var(--spacing) * 3);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
@@ -505,6 +533,9 @@
   .scroll-smooth {
     scroll-behavior: smooth;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -555,6 +586,15 @@
   .border-b-\[\#e2e8f0\] {
     border-bottom-color: #e2e8f0;
   }
+  .bg-\[\#9D3390\] {
+    background-color: #9D3390;
+  }
+  .bg-\[\#9d337c\] {
+    background-color: #9d337c;
+  }
+  .bg-\[\#9d3390\] {
+    background-color: #9d3390;
+  }
   .bg-\[\#2563eb\] {
     background-color: #2563eb;
   }
@@ -576,8 +616,29 @@
   .bg-\[rgba\(34\,197\,94\,0\.12\)\] {
     background-color: rgba(34,197,94,0.12);
   }
+  .bg-gray-600 {
+    background-color: var(--color-gray-600);
+  }
+  .bg-gray-700 {
+    background-color: var(--color-gray-700);
+  }
+  .bg-green-600 {
+    background-color: var(--color-green-600);
+  }
+  .bg-green-700 {
+    background-color: var(--color-green-700);
+  }
+  .bg-green-800 {
+    background-color: var(--color-green-800);
+  }
   .bg-sky-600 {
     background-color: var(--color-sky-600);
+  }
+  .bg-sky-700 {
+    background-color: var(--color-sky-700);
+  }
+  .bg-sky-900 {
+    background-color: var(--color-sky-900);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -605,6 +666,9 @@
   }
   .p-0 {
     padding: calc(var(--spacing) * 0);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
@@ -848,13 +912,6 @@
       }
     }
   }
-  .group-hover\/btn\:animate-\[to-down_1s_ease-in-out_infinite\] {
-    &:is(:where(.group\/btn):hover *) {
-      @media (hover: hover) {
-        animation: to-down 1s ease-in-out infinite;
-      }
-    }
-  }
   .group-hover\/downloadBtn\:animate-\[to-down_1s_ease-in-out_infinite\] {
     &:is(:where(.group\/downloadBtn):hover *) {
       @media (hover: hover) {
@@ -1032,6 +1089,27 @@
       }
     }
   }
+  .hover\:bg-\[\#9D3390\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #9D3390;
+      }
+    }
+  }
+  .hover\:bg-\[\#9d337c\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #9d337c;
+      }
+    }
+  }
+  .hover\:bg-\[\#9e3d93\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #9e3d93;
+      }
+    }
+  }
   .hover\:bg-gray-200 {
     &:hover {
       @media (hover: hover) {
@@ -1039,10 +1117,52 @@
       }
     }
   }
+  .hover\:bg-gray-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-500);
+      }
+    }
+  }
+  .hover\:bg-gray-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-600);
+      }
+    }
+  }
+  .hover\:bg-green-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-green-500);
+      }
+    }
+  }
+  .hover\:bg-green-700 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-green-700);
+      }
+    }
+  }
   .hover\:bg-sky-500 {
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-sky-500);
+      }
+    }
+  }
+  .hover\:bg-sky-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-sky-600);
+      }
+    }
+  }
+  .hover\:bg-sky-800 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-sky-800);
       }
     }
   }
